@@ -1,1 +1,106 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mahima | Portfolio</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#090b18;color:#f5f3ff;font-family:Arial,sans-serif;line-height:1.7}
+header,section,footer{max-width:1000px;margin:auto;padding:28px 22px}
+header{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.logo{color:#72f3e5;font-weight:bold;font-size:23px}
+nav a{color:#ddd5ff;margin-left:14px;text-decoration:none}
+.hero{padding-top:85px;padding-bottom:80px;min-height:65vh}
+.tag{color:#72f3e5;letter-spacing:3px;text-transform:uppercase;font-size:13px}
+h1{font-size:clamp(42px,8vw,76px);line-height:1.1;margin:18px 0}
+h2{font-size:32px}
+.gradient{background:linear-gradient(90deg,#72f3e5,#b99aff,#ff8dd8);color:transparent;background-clip:text}
+p{color:#c3c4df}
+.btn{display:inline-block;padding:11px 17px;border-radius:10px;margin:8px 8px 0 0;text-decoration:none;font-weight:bold;background:#72f3e5;color:#101326}
+.btn.alt{background:#211d3d;color:#fff;border:1px solid #49406e}
+.orb{width:170px;height:170px;margin:38px auto;border-radius:50%;background:radial-gradient(circle at 30% 25%,#fff,#a88bff 20%,#5040a0 55%,#12152b 75%);box-shadow:0 0 60px #987aff66;animation:float 5s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-14px) rotate(10deg)}}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:17px}
+.card{padding:22px;border-radius:17px;border:1px solid #373354;background:linear-gradient(145deg,#191a36,#101224);transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:#72f3e5}
+.card a{color:#72f3e5;text-decoration:none;font-weight:bold}
+.small{font-size:14px;color:#aaaecb}
+.skills span{display:inline-block;border:1px solid #49406e;border-radius:30px;padding:7px 12px;margin:5px;color:#ddd5ff}
+footer{border-top:1px solid #373354;color:#a9acc9;font-size:14px}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">MAHIMA.</div>
+  <nav><a href="#projects">Projects</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+<section class="hero">
+  <div class="tag">CSE · Artificial Intelligence & Machine Learning</div>
+  <h1>Curious mind.<br><span class="gradient">Builder's spirit.</span></h1>
+  <p>Hi, I'm Mahima! I'm a computer science student exploring AI-powered ideas, web projects, and practical digital products. I learn by building and improving one step at a time.</p>
+  <a class="btn" href="#projects">Explore Projects ↓</a>
+  <a class="btn alt" href="https://github.com/mahimakanoujiya">My GitHub ↗</a>
+  <div class="orb" aria-label="Abstract 3D orb"></div>
+</section>
+
+<section id="projects">
+  <div class="tag">Things I've worked on</div>
+  <h2>Featured Projects<span class="gradient">.</span></h2>
+  <div class="cards">
+    <article class="card">
+      <div class="tag">Hackathon prototype</div>
+      <h3>Curera AI</h3>
+      <p>A voice-first healthcare communication concept that structures patient language for clinician routing. Not a diagnosis or prescription tool.</p>
+      <a href="https://curera-ai.vercel.app/" target="_blank" rel="noreferrer">View project ↗</a>
+    </article>
+    <article class="card">
+      <div class="tag">Live website</div>
+      <h3>GreenBasket</h3>
+      <p>A plant-focused online store built with WordPress and WooCommerce.</p>
+      <a href="https://greenbasketshop.in/" target="_blank" rel="noreferrer">Visit website ↗</a>
+    </article>
+    <article class="card">
+      <div class="tag">Web project</div>
+      <h3>FlipRead</h3>
+      <p>A web project exploring a more interactive PDF-reading experience.</p>
+      <a href="https://flip-read.vercel.app/" target="_blank" rel="noreferrer">Open FlipRead ↗</a>
+    </article>
+    <article class="card">
+      <div class="tag">Concept</div>
+      <h3>Neer-Drishti AI</h3>
+      <p>A water-test strip scan interface concept. It is not a validated water-safety testing product.</p>
+    </article>
+  </div>
+</section>
+
+<section id="about">
+  <div class="tag">A little about me</div>
+  <h2>Learning by doing<span class="gradient">.</span></h2>
+  <p>I'm a CSE student specialising in AI & ML, based in Lucknow, Uttar Pradesh, India. I'm interested in AI/ML, useful digital products, student communities, and hackathons.</p>
+  <h3>Skills & Tools</h3>
+  <div class="skills">
+    <span>C — learning</span><span>Python — learning</span>
+    <span>AI/ML — exploring</span><span>WordPress</span>
+    <span>WooCommerce</span><span>GitHub</span><span>Vercel</span><span>Canva</span>
+  </div>
+  <p class="small">These labels reflect my current learning stage and project experience, not expert-level claims.</p>
+</section>
+
+<section id="contact">
+  <div class="tag">Let's connect</div>
+  <h2>Let's build and learn.</h2>
+  <p>Open to connecting with students, project teams, and builder communities.</p>
+  <a class="btn" href="https://www.linkedin.com/in/mahima-kanoujiya-041a87411" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+  <a class="btn alt" href="https://www.instagram.com/gloryy_13_/" target="_blank" rel="noreferrer">Instagram ↗</a>
+  <a class="btn alt" href="mailto:mahikanoujiya69@gmail.com">Email ↗</a>
+  <a class="btn alt" href="https://github.com/mahimakanoujiya">GitHub ↗</a>
+</section>
+</main>
+<footer>© <span id="year"></span> Mahima · Made with curiosity, learning, and code.</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+  </html>
+
